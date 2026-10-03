@@ -1,0 +1,16 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0;
+    list-style: none;
+}
+
+.tag {
+    padding: 3px 10px;
+    border-radius: 4px;
+    background: var(--color-green-soft);
+    color: var(--color-green);
+    font-size: 14px;
+    line-height: 1.5;
+}

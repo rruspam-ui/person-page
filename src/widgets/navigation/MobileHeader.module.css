@@ -1,0 +1,109 @@
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--color-green);
+    color: var(--color-on-green);
+}
+
+@media (min-width: 1024px) {
+    .header {
+        display: none;
+    }
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: var(--mobile-header-height);
+    padding: 8px 8px 8px 16px;
+}
+
+.photo {
+    flex: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.identity {
+    flex: 1;
+    min-width: 0;
+}
+
+.name {
+    font: 700 17px/1.15 var(--font-serif);
+}
+
+.role {
+    overflow: hidden;
+    color: var(--color-on-green-muted);
+    font-size: 12px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.burger {
+    display: grid;
+    place-items: center;
+    flex: none;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+
+.icon,
+.icon::before,
+.icon::after {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--color-on-green);
+    transition: transform 0.2s ease;
+}
+
+.icon {
+    position: relative;
+}
+
+.icon::before,
+.icon::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.icon::before {
+    top: -7px;
+}
+
+.icon::after {
+    top: 7px;
+}
+
+.iconOpen {
+    background: transparent;
+}
+
+.iconOpen::before {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.iconOpen::after {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+.menu {
+    padding: 0 16px 12px;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 15%);
+}
+
+@media (max-width: 380px) {
+    .role {
+        display: none;
+    }
+}

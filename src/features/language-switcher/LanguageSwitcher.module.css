@@ -1,0 +1,30 @@
+.switcher {
+    display: flex;
+    gap: 6px;
+}
+
+.option {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 36px;
+    padding: 0 10px;
+    border: 1px solid rgb(243 239 231 / 35%);
+    border-radius: 4px;
+    background: transparent;
+    color: var(--color-on-green);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.option:hover {
+    border-color: var(--color-on-green);
+}
+
+.active {
+    background: var(--color-on-green);
+    border-color: var(--color-on-green);
+    color: var(--color-green);
+    font-weight: 700;
+}

@@ -1,0 +1,34 @@
+.section {
+    margin-top: 52px;
+}
+
+.title {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    font-size: 25px;
+}
+
+.index {
+    font: 700 15px var(--font-sans);
+    color: var(--color-accent);
+}
+
+.subtitle {
+    margin-top: 6px;
+    color: var(--color-muted);
+}
+
+.body {
+    margin-top: 24px;
+}
+
+@media (min-width: 1024px) {
+    .section {
+        margin-top: 76px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}

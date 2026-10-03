@@ -1,0 +1,36 @@
+.grid {
+    display: grid;
+    gap: 16px;
+}
+
+.list,
+.languages {
+    padding: 0;
+    list-style: none;
+}
+
+.item {
+    padding: 22px;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius);
+    background: var(--color-paper);
+}
+
+.institution {
+    margin-bottom: 8px;
+    font-size: 19px;
+}
+
+.languages li {
+    margin: 4px 0;
+}
+
+.muted {
+    color: var(--color-muted);
+}
+
+@media (min-width: 900px) {
+    .grid {
+        grid-template-columns: 2fr 1fr;
+    }
+}

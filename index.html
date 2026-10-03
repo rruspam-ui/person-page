@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="%PAGE_LANG%">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+        <meta name="description" content="%PAGE_DESCRIPTION%" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="%PAGE_TITLE%" />
+        <meta property="og:description" content="%PAGE_DESCRIPTION%" />
+        <meta property="og:locale" content="%PAGE_OG_LOCALE%" />
+        <meta name="theme-color" content="#23463A" />
+        <!-- иконка встроена: путь к файлу ломался бы при смене адреса /ru/ ↔ /en/ -->
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2212%22 fill=%22#23463A%22/%3E%3Ctext x=%2232%22 y=%2242%22 text-anchor=%22middle%22 font-family=%22Georgia, serif%22 font-size=%2228%22 font-weight=%22700%22 fill=%22#F3EFE7%22%3E%D0%A0%D0%98%3C/text%3E%3C/svg%3E"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=PT+Serif:wght@400;700&display=swap&subset=cyrillic"
+            rel="stylesheet"
+        />
+        <title>%PAGE_TITLE%</title>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
+</html>

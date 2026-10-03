@@ -1,0 +1,18 @@
+import '@testing-library/jest-dom/vitest';
+import { cleanup } from '@testing-library/react';
+import { afterEach } from 'vitest';
+
+afterEach(() => {
+    cleanup();
+});
+
+// jsdom не реализует методы <dialog>
+if (typeof HTMLDialogElement !== 'undefined' && !HTMLDialogElement.prototype.showModal) {
+    HTMLDialogElement.prototype.showModal = function showModal(this: HTMLDialogElement): void {
+        this.setAttribute('open', '');
+    };
+    HTMLDialogElement.prototype.close = function close(this: HTMLDialogElement): void {
+        this.removeAttribute('open');
+        this.dispatchEvent(new Event('close'));
+    };
+}

@@ -1,0 +1,24 @@
+.grid {
+    display: grid;
+    gap: 24px 32px;
+}
+
+.title {
+    margin-bottom: 10px;
+    font: 700 15px var(--font-sans);
+    color: var(--color-accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+@media (min-width: 641px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
