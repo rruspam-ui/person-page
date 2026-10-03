@@ -1,7 +1,7 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vitest/config';
 
-import { localePagesPlugin } from './build/locale-pages-plugin.ts';
+import { localePagesPlugin } from './vite-plugins/locale-pages-plugin.ts';
 
 /** Конфигурация Vite и Vitest */
 export default defineConfig({
