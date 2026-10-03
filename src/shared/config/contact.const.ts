@@ -1,6 +1,6 @@
 /** Адрес Google Apps Script, который принимает заявки из формы связи */
 export const CONTACT_ENDPOINT_URL =
-    'https://script.google.com/macros/s/AKfycbxLUPo0bMmyMmh-A19_t_wpvwEfY5ODJjUJ9V-OsExxsv_SbLwz8OCi_GiDA512dfss1A/exec';
+    'https://script.google.com/macros/s/AKfycbwN2_JMwj9P73ZNtnKxxHOhBTkbBzGKS1Kw-rifKru59eKbGZrjIjsoENkCtuGylYAi/exec';
 
 /** Сколько символов должно остаться в сообщении, чтобы счётчик подсветился как предупреждение */
 export const MESSAGE_COUNTER_WARN_REMAINING = 100;
