@@ -19,11 +19,7 @@ export const PROFILE: Profile = {
             'to production, plan the work and help the team grow.',
     },
     currentStackSince: { year: 2018, month: 3 },
-    workConditions: [
-        { ru: 'Санкт-Петербург', en: 'Saint Petersburg' },
-        { ru: 'Готов к переезду в Москву и командировкам', en: 'Open to relocation to Moscow and business trips' },
-        { ru: 'Офис · удалённо · гибрид', en: 'Office · remote · hybrid' },
-    ],
+    workConditions: [{ ru: 'Санкт-Петербург', en: 'Saint Petersburg' }],
     strengths: [
         {
             title: { ru: 'Лидерство команды', en: 'Team leadership' },
