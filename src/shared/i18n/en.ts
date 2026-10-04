@@ -19,7 +19,7 @@ export const en: Dictionary = {
     },
     stats: {
         years: 'of commercial development',
-        teams: 'teams I led as team lead',
+        teams: 'team I led as team lead',
         technologies: 'technologies in my stack',
     },
     strengths: {
@@ -28,6 +28,8 @@ export const en: Dictionary = {
     experience: {
         present: 'present',
         teamLead: 'Team Lead',
+        expand: 'Expand',
+        collapse: 'Collapse',
     },
     skills: {
         subtitle: 'Technologies I have used in production',

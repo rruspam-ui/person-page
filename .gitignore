@@ -23,6 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-# Резюме с личными данными (телефон, почта) — не публикуется
-person.pdf
+# OS generated files
 coverage

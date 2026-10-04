@@ -51,6 +51,28 @@ describe('App', () => {
         expect(within(dialog).getByLabelText('Ваше имя')).toBeInTheDocument();
     });
 
+    it('раскрывает только два последних места работы и сворачивает их по кнопке', async () => {
+        render(<App />);
+        const toggles = screen.getAllByRole('button', { name: /^(Свернуть|Развернуть):/ });
+        expect(toggles.map((button) => button.getAttribute('aria-expanded'))).toEqual([
+            'true',
+            'true',
+            'false',
+            'false',
+            'false',
+        ]);
+        expect(screen.getByText('Сервер параметризации POS-терминалов (TMS)')).not.toBeVisible();
+
+        await userEvent.click(screen.getByRole('button', { name: 'Развернуть: Сириус' }));
+        expect(screen.getByText('Сервер параметризации POS-терминалов (TMS)')).toBeVisible();
+
+        await userEvent.click(screen.getByRole('button', { name: 'Свернуть: Технология Доверия' }));
+        expect(screen.getByRole('button', { name: 'Развернуть: Технология Доверия' })).toHaveAttribute(
+            'aria-expanded',
+            'false',
+        );
+    });
+
     it('не показывает личные контакты', () => {
         const { container } = render(<App />);
         const text = container.textContent ?? '';

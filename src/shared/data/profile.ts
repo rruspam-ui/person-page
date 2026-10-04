@@ -29,10 +29,10 @@ export const PROFILE: Profile = {
             title: { ru: 'Лидерство команды', en: 'Team leadership' },
             description: {
                 ru:
-                    'Тимлид в ВСК и «Сириусе»: распределение задач, контроль сроков, ввод новых разработчиков ' +
+                    'Тимлид в ВСК: распределение задач, контроль сроков, ввод новых разработчиков ' +
                     'в стек, центр компетенций команды.',
                 en:
-                    'Team lead at VSK and Sirius: task planning, deadline control, onboarding new developers, ' +
+                    'Team lead at VSK: task planning, deadline control, onboarding new developers, ' +
                     "acting as the team's center of expertise.",
             },
         },
@@ -180,7 +180,7 @@ export const PROFILE: Profile = {
             city: { ru: 'Санкт-Петербург', en: 'Saint Petersburg' },
             industry: { ru: 'Разработка ПО, системная интеграция', en: 'Software development, system integration' },
             position: { ru: 'Senior Fullstack Developer', en: 'Senior Fullstack Developer' },
-            isTeamLead: true,
+            isTeamLead: false,
             start: { year: 2018, month: 3 },
             end: { year: 2021, month: 12 },
             summary: {
@@ -210,10 +210,10 @@ export const PROFILE: Profile = {
                 },
                 {
                     ru:
-                        'Обязанности тимлида: постановка задач и контроль их выполнения, планирование этапов ' +
+                        'Обязанности: постановка задач и контроль их выполнения, планирование этапов ' +
                         'разработки, обучение и сопровождение клиентов, документация',
                     en:
-                        'Team lead duties: assigning and tracking tasks, release planning, client training ' +
+                        'Responsibilities: assigning and tracking tasks, release planning, client training ' +
                         'and support, documentation',
                 },
             ],
@@ -263,6 +263,29 @@ export const PROFILE: Profile = {
                 },
             ],
             stack: ['C/C++', 'Visual Studio', 'Windows', 'PHP', 'HTTP', 'Embedded'],
+        },
+        {
+            company: { ru: 'ООО «АТМ-Сервис»', en: 'ATM-Service LLC' },
+            industry: { ru: 'Банковское оборудование', en: 'Banking equipment' },
+            position: { ru: 'Разработчик C/C++', en: 'C/C++ Developer' },
+            isTeamLead: false,
+            start: { year: 2005, month: 6 },
+            end: { year: 2008, month: 8 },
+            summary: {
+                ru: 'ПО для диагностики банкоматов и прошивки устройств, встраиваемых в банкоматы.',
+                en: 'ATM diagnostic software and firmware for devices embedded in ATMs.',
+            },
+            achievements: [
+                {
+                    ru: 'Разработка ПО для диагностики оборудования банкоматов',
+                    en: 'Developed diagnostic software for ATM hardware',
+                },
+                {
+                    ru: 'Разработка ПО для отдельных устройств, встраиваемых в банкоматы',
+                    en: 'Developed software for standalone devices embedded in ATMs',
+                },
+            ],
+            stack: ['C/C++', 'Windows', 'Microcontrollers', 'Embedded', 'Hardware diagnostics'],
         },
     ],
     skillGroups: [

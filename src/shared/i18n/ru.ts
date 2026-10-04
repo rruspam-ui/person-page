@@ -17,7 +17,7 @@ export const ru = {
     },
     stats: {
         years: 'коммерческой разработки',
-        teams: 'команды, где я был тимлидом',
+        teams: 'команда, где я был тимлидом',
         technologies: 'технологий в рабочем стеке',
     },
     strengths: {
@@ -26,6 +26,8 @@ export const ru = {
     experience: {
         present: 'н.в.',
         teamLead: 'Team Lead',
+        expand: 'Развернуть',
+        collapse: 'Свернуть',
     },
     skills: {
         subtitle: 'Технологии, с которыми работал в продакшене',

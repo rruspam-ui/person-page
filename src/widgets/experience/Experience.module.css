@@ -5,9 +5,41 @@
 
 .job {
     display: grid;
-    gap: 6px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 6px 16px;
     padding: 24px 0;
     border-top: 1px solid var(--color-line);
+}
+
+.toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 1px solid var(--color-green);
+    border-radius: var(--radius);
+    background: transparent;
+    color: var(--color-green);
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.toggle:hover {
+    background: var(--color-green-soft);
+}
+
+.toggle svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+}
+
+.body {
+    grid-column: 1 / -1;
 }
 
 .when {
@@ -58,8 +90,13 @@
 
 @media (min-width: 641px) {
     .job {
-        grid-template-columns: 170px 1fr;
+        grid-template-columns: 48px 170px 1fr;
+        align-items: start;
         gap: 28px;
         padding: 28px 0;
+    }
+
+    .body {
+        grid-column: auto;
     }
 }
